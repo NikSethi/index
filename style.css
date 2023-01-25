@@ -61,10 +61,14 @@ strong {
       padding: 10px;
    }
 
+   .header-row {
+      border-top: none;
+      border-bottom: solid 2px green;
+   }
+
    th {
       opacity: 0;
       max-height: 0;
-      border-top: solid 2px green;
    }
 
    .row-content {

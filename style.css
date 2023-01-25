@@ -122,10 +122,12 @@ strong {
 
    tr:hover {
       background-color: #CAFBC1;
+      cursor:pointer;
    }
 
    tr.header-row:hover  {
       background-color: #E3FBDF;
+      cursor:auto;
    }
 
 

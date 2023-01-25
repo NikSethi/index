@@ -120,12 +120,12 @@ strong {
       padding: 15px;
    }
 
-   .header-row tr:hover {
-      background-color: #1A680D;
-   }
-
    tr:hover {
       background-color: #CAFBC1;
+   }
+
+   tr.header-row:hover  {
+      background-color: #E3FBDF;
    }
 
 

@@ -141,7 +141,7 @@ strong {
    .row-content img {
       grid-column: 1;
       width:80%;
-      image-orientation: none;
+      image-orientation: 0deg;
    }
 
 

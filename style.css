@@ -134,6 +134,8 @@ strong {
    .row-content {
       display:grid;
       grid-template-columns: 30% 20% 25% 15% 5%;
+      column-gap: 10px;
+      padding:15px;
    }
 
    .row-content img {
@@ -146,6 +148,7 @@ strong {
    .row-content p {
       grid-column: 2/-1;
       font-size:12pt;
+      margin:auto 0;
    /*   padding-left:10px;*/
    }
 
@@ -164,7 +167,7 @@ strong {
 
 a {
    text-decoration: none;
-   color: #14520A;
+   color: black;
 }
 
 a:visited {

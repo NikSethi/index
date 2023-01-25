@@ -1,19 +1,19 @@
 @font-face {
     font-family: PPNeueMontreal;
-    src: url("../fonts/PPNeueMontreal-Medium.otf") format("opentype");
+    src: url("fonts/PPNeueMontreal-Book.otf") format("opentype");
 }
 
 @font-face {
     font-family: PPNeueMontreal;
     font-weight: bold;
-    src: url("../fonts/PPNeueMontreal-Bold.otf") format("opentype");
+    src: url("fonts/PPNeueMontreal-Medium.otf") format("opentype");
 }
 
 
 @font-face {
     font-family: PPNeueMontreal;
     font-style: italic;
-    src: url("../fonts/PPNeueMontreal-Italic.otf") format("opentype");
+    src: url("fonts/PPNeueMontreal-Italic.otf") format("opentype");
 }
 
 .header h2 {
@@ -85,6 +85,18 @@ strong {
       font-size:12pt;
    /*   padding-left:10px;*/
    }
+
+   .plus-icon {
+      display:inline-block;
+      transition: all 0.3s ease-in;
+      transform: rotate(0deg);
+   }
+
+   .x-icon {
+      transform-origin: center;
+      transition: all 0.3s ease-in;
+      transform: rotate(45deg);
+   }
 }
 
 @media (min-width: 500px){
@@ -102,23 +114,24 @@ strong {
 
    tr {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 30% 20% 25% 15% 5%;
       column-gap:10px  ;
       border-bottom: solid 1px green;
       padding: 15px;
-   }
-
-   tr:hover {
-      background-color: #CAFBC1;
    }
 
    .header-row tr:hover {
       background-color: #1A680D;
    }
 
+   tr:hover {
+      background-color: #CAFBC1;
+   }
+
+
    .row-content {
       display:grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 30% 20% 25% 15% 5%;
    }
 
    .row-content img {
@@ -132,10 +145,27 @@ strong {
       font-size:12pt;
    /*   padding-left:10px;*/
    }
+
+
+   .plus-icon {
+      text-align: center;
+      transition: all 0.3s ease-in;
+      transform: rotate(0deg);
+   }
+
+   .x-icon {
+      transition: all 0.3s ease-in;
+      transform: rotate(45deg);
+   }
 }
 
 a {
    text-decoration: none;
+   color: #14520A;
+}
+
+a:visited {
+   color: black;
 }
 
 a:hover {
@@ -161,14 +191,12 @@ td {
    display: grid;
    grid-column: 1/-1;
    opacity: 100%;
-   transition: opacity .3s ease-in;
 
    max-height: 500px;
    transition: all 0.6s ease-in;
 }
 
 .hide-row {
-   transition: opacity ease .3s;
    opacity: 0;
 
    max-height: 0;

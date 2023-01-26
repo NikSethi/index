@@ -161,7 +161,7 @@ strong {
 
    .x-icon {
       transition: all 0.3s ease-in;
-      transform: rotate(45deg);
+      transform: rotate(225deg);
    }
 }
 

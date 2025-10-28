@@ -31,8 +31,9 @@ strong {
 }
 
 .header p {
-   font-size: 12pt;
+   font-size: 16pt;
    margin:0;
+   line-height: 1.2;
 }
 
 .header-row {

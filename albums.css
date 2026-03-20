@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap');
+
+:root {
+  --beige: #F5F0E6;
+  --green: #2D8C4E;
+  --black: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--beige);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--black);
+  line-height: 1.4;
+  padding: 3rem 2rem;
+}
+
+header {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid var(--black);
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+}
+
+.album-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.album-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--black);
+}
+
+.album-card:last-child {
+  border-bottom: 3px solid var(--black);
+}
+
+.album-art {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.album-art-placeholder {
+  width: 160px;
+  height: 160px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--beige);
+  text-transform: uppercase;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.album-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.album-artist {
+  font-size: 1rem;
+  color: var(--green);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline {
+  display: inline-block;
+  border: 2px solid var(--green);
+  color: var(--green);
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.notes {
+  color: var(--black);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.important-songs {
+  margin-top: auto;
+}
+
+.important-songs h4 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.song-tag {
+  background: var(--green);
+  color: var(--beige);
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .album-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .album-art,
+  .album-art-placeholder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 3px solid var(--black);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
